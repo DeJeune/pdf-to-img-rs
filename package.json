@@ -1,6 +1,6 @@
 {
   "name": "@cherrystudio/pdf-to-img-napi",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "DeJeune",
   "description": "📃📸 Converts PDFs to images in nodejs with napi-rs/canvas",
   "exports": "./dist/index.js",
