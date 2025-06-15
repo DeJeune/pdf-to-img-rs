@@ -1,8 +1,8 @@
 {
-  "name": "pdf-to-img",
-  "version": "4.5.0",
-  "author": "Kyle Hensel",
-  "description": "📃📸 Converts PDFs to images in nodejs",
+  "name": "pdf-to-img-napi",
+  "version": "0.0.1",
+  "author": "DeJeune",
+  "description": "📃📸 Converts PDFs to images in nodejs with napi-rs/canvas",
   "exports": "./dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
@@ -13,12 +13,12 @@
   "keywords": [
     "pdf",
     "pdfjs",
-    "pdf-to-img",
+    "pdf-to-img-napi",
     "pdf-to-png",
     "vitest",
     "jest"
   ],
-  "repository": "https://github.com/k-yle/pdf-to-img",
+  "repository": "https://github.com/DeJeune/pdf-to-img-rs",
   "scripts": {
     "build": "tsc && rm -rf dist && mv temp/src dist && rm -rf temp",
     "lint": "eslint .",
@@ -33,13 +33,12 @@
   },
   "engineStrict": true,
   "dependencies": {
-    "canvas": "3.1.0",
-    "pdfjs-dist": "4.2.67"
+    "@napi-rs/canvas": "^0.1.71",
+    "pdfjs-dist": "^4.10.38"
   },
   "devDependencies": {
     "@types/jest-image-snapshot": "^6.4.0",
     "@types/node": "^22.13.4",
-    "@types/pdfjs-dist": "2.10.377",
     "@vitest/coverage-v8": "^1.6.0",
     "eslint": "^9.20.1",
     "eslint-config-kyle": "^25.0.0",
