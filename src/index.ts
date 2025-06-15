@@ -90,6 +90,8 @@ export async function pdf(
     cMapPacked: true,
     ...options.docInitParams,
     isEvalSupported: false,
+    useSystemFonts: true,
+    verbosity: pdfjs.VerbosityLevel.ERRORS,
     CanvasFactory,
     data,
   }).promise;
